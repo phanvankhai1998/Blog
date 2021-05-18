@@ -54,7 +54,17 @@ public class Book {
 					System.out.println("invalid index");
 				}
 			}
+			if(cmd.equals("search")) {		//SEARCH
+				System.out.println("Search writer :>");
+				cmd = sc.nextLine();
+				Article rs = searchArticleByWriter("Jang");
+			}
 		}// end while
+	}
+
+	private static Article searchArticleByWriter(String string) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	private static void deleteArticle(int idx) {
@@ -122,5 +132,11 @@ public class Book {
 			seq++;
 			//ArrayIndexOutOfBounds
 		}
+		//OUT is instance name : article
+		System.out.println(article);	// OUT: Project.Aritcle@7637f22
+		//article fields
+		System.out.println(article.getTitle());	
+		System.out.println(article.getWriterName());	
+		System.out.println(article.getContent());		
 	}
 }

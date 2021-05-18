@@ -11,6 +11,8 @@ public class Article {
 	// Access Modifier : private public protected (default)
 	// field have to be private
 	// method public
+	//private: ngăn class bên ngoài sd
+	//field static đều mang một giá trị
 	private long seq;
 	private String title;
 	private String writerName;
